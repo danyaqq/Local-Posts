@@ -10,3 +10,9 @@ extension View {
         return rootViewController
     }
 }
+
+extension View {
+    func onFirstAppear(_ action: @escaping (() -> Void)) -> some View {
+        modifier(FirstAppear(action: action))
+    }
+}
