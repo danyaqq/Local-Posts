@@ -76,6 +76,6 @@ protocol Routable {
     func push(_ view: some View, animated: Bool)
     func pop(animated: Bool)
     func popToRoot(animated: Bool)
-    func asd()
+    func as785349978345d()
 }
 
