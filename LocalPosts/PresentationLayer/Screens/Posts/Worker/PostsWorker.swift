@@ -70,3 +70,11 @@ private extension PostsWorker {
         return filteredEntities.isEmpty ? false : true
     }
 }
+
+protocol Routable {
+    var navigationController: UINavigationController { get set }
+    func push(_ view: some View, animated: Bool)
+    func pop(animated: Bool)
+    func popToRoot(animated: Bool)
+}
+
